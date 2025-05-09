@@ -1,13 +1,10 @@
-import Button from './Button';
-import Cards from './Cards'; 
 import Sidebar from './Sidebar';
+import InnerContainer from './InnerContainer';
 const MainContainer=()=>{
     return(
-        <div>
-            <span>MainContainer Component</span>
-            <Cards/>
-            <Button/>
+        <div className="flex">
             <Sidebar/>
+            <InnerContainer/>            
         </div>
     )
 }

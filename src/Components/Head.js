@@ -4,8 +4,7 @@ import SearchBox from './SearchBox';
 import UserIcon from './UserIcon';
 const Head=()=>{
     return(
-        <div>
-            <span>Head Component</span>
+        <div className="flex items-center">
             <HamburgerIcon/>
             <Logo/>
             <SearchBox/>
