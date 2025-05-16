@@ -1,6 +1,6 @@
 import React from 'react'
 const Button = () => {
-  const btnContent=['All','Live','India','React','Music','News','Aptitude','Programming','Comedy','Web Series','Podcast','Subcriptions']
+  const btnContent=['All','Live','India','React','Music','News','Aptitude','Programming','Comedy','Web Series','Podcast']
   return (
     <div>
       {btnContent.map((item)=>{
