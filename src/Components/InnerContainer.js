@@ -14,7 +14,7 @@ const InnerContainer=()=>{
     const getApi=async ()=>{
         const response=await fetch(API_URI_YT)
         const youtubeResponse=await response.json()
-        //console.log(youtubeResponse)
+       // console.log(youtubeResponse.items)
         setApiData(youtubeResponse.items)
     }
     if(!apiData.length) return <Shimmer/>
