@@ -5,7 +5,7 @@ import { API_KEY } from "../Utils/Constant";
 import { API_URI_YT } from "../Utils/Constant";
 import ShimmerCards from "./ShimmerCards";
 import Shimmer from "./Shimmer";
-
+import { Link } from 'react-router-dom';
 
 
 const InnerContainer=()=>{
@@ -29,7 +29,10 @@ const InnerContainer=()=>{
         {
             apiData.map((items)=>{
               return(
-                <Cards data={items} key={items.id}/>
+                
+                <Link to={"/watch?v="+items.id}>
+                  <Cards data={items} key={items.id}/>
+                </Link>
               )
             })
         }
