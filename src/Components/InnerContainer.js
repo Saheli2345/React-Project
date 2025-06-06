@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
 import Button from "./Button";
-import Cards from "./Cards";
+import Cards, { CardsHOC } from "./Cards";
 import { API_KEY } from "../Utils/Constant";
 import { API_URI_YT } from "../Utils/Constant";
 import ShimmerCards from "./ShimmerCards";
 import Shimmer from "./Shimmer";
+
+
 
 const InnerContainer=()=>{
     const [apiData,setApiData]=useState([]);
@@ -22,10 +24,12 @@ const InnerContainer=()=>{
     <div className="bg-slate-200 w-4/5">
         <Button/>
        <div className="flex flex-wrap">
+         {/* {apiData.length?<CardsHOC data={apiData[0]}/>:""}*/}
+         {apiData.length && <CardsHOC data={apiData[0]}/>}
         {
             apiData.map((items)=>{
               return(
-                <Cards data={items}/>
+                <Cards data={items} key={items.id}/>
               )
             })
         }
