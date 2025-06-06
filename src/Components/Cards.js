@@ -7,4 +7,9 @@ const Cards=({data})=>{
         </div>
     )
 }
+export const CardsHOC=({data})=>{
+    return(
+        <div className="border border-black"> <Cards data={data}/> </div>
+    )
+}
 export default Cards;
