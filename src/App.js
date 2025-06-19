@@ -1,42 +1,46 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 import Head from './Components/Head';
 import MainContainer from './Components/MainContainer';
-import {createBrowserRouter, RouterProvider} from "react-router-dom";
-import Shimmer from './Components/Shimmer';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import InnerContainer from './Components/InnerContainer';
+import Watch from './Components/Watch';
 
 function App() {
   const appRouter = createBrowserRouter([
-  { 
-    path: "/",
-    element: <MainContainer/>,
-    children:[
     {
-    path: "/",
-    element: <InnerContainer/>
-   },
-   {
-    path:"/history",
-    element:<h1>This is HistoryPage</h1>
+      path: "/",
+      element: <>
+              <Head/>
+              <MainContainer />
+              </>,
+      children: [
+        {
+          path: "/",
+          element: <InnerContainer />
+        },
+        {
+          path: "/history",
+          element: <h1>This is History Page</h1>
+        },
+        {
+          path: "/watch",
+          element: <Watch />  
+        },
+      ]
     },
     {
-      path:"/watch",
-      element: <h1>This is Watch page</h1>
-    },
-  ] },
-  {
-    path:"/demo",
-    element:<h1>This is demo page</h1>
-  },
-]);
+      path: "/demo",
+      element: <h1>This is Demo Page</h1>
+    }
+  ]);
+
   return (
-   <div>
-    <Head/>
-    <RouterProvider router={appRouter}/>
-   </div>
-  );   
+    <>
+      <RouterProvider router={appRouter} />
+    </>
+  );
 }
 
 export default App;
-/*<> </>  sugar coating from , react fagment for wraping*/
+/*/<></> sugar coating from, react fagment for wraping/*/

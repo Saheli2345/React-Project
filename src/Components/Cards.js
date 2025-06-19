@@ -14,4 +14,5 @@ export const CardsHOC=({data})=>{
 }
 export default Cards;
 /*card =default export, default use hoi, eta normal vabe import kora hoi
-CardsHOC=name export  ,default use hoi nah , eta {} diye import hoi*/
+CardsHOC=name export  ,default use hoi nah , eta {} diye import hoi
+postman = clind service*/

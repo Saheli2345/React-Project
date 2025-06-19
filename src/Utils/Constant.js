@@ -1,2 +1,2 @@
-export const API_KEY="AIzaSyB478QDLUKO5EfDkMkWnq2TVC3nplyW1YY";
+export const API_KEY="AIzaSyB10_V2SeFcQ8mlgOc6cXvGQAwDBIpkwk0";
 export const API_URI_YT="https://www.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&regionCode=IN&maxResults=50&key="+API_KEY
