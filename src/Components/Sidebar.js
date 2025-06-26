@@ -14,6 +14,9 @@ const Sidebar=()=>{
                   <Link to='/watch'>Watch </Link>  
                 </li>
                 <li>
+                  <Link to='/test'>Test </Link>  
+                </li>
+                <li>
                   <Link to='/demo'>Demo</Link>
                 </li>
             </ul>
