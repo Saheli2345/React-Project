@@ -1,7 +1,9 @@
 const UserIcon=()=>{
     return(
         <div>
-           <img  className="h-12 w-20  mx-3 ml-[30rem] my-2" src="https://static.vecteezy.com/system/resources/previews/019/879/186/original/user-icon-on-transparent-background-free-png.png" alt="navigation icon"/>
+           <img  className="h-12 w-20  mx-3 ml-[30rem] my-2"
+           src="https://static.vecteezy.com/system/resources/previews/019/879/186/original/user-icon-on-transparent-background-free-png.png" 
+           alt="navigation icon"/>
         </div>
     )
 }
